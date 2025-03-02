@@ -6,7 +6,7 @@ export default function Trainingstagebuch() {
     const [form, setForm] = useState({ datum: "", uebung: "", gewicht: "", wiederholungen: "", benutzer: "Benutzer1" });
 
     // Ändere diese URL auf deine Render-Backend-URL!
-    const API_URL = "https://deinbackend.onrender.com/api/training";
+    const API_URL = "https://ttb-h53b.onrender.com/";
 
     useEffect(() => {
         axios.get(API_URL, { params: { benutzer: form.benutzer } })
